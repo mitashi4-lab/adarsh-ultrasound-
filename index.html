@@ -1,159 +1,185 @@
-<!DOCTYPE html>
-<html>
+# Generate the updated HTML file with banner, gallery, services, doctor section,
+# WhatsApp button, appointment form, Google map, and basic SEO.
+
+html = """<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Adarsh Ultrasound Centre</title>
+<title>Adarsh Ultrasound Centre Nehtaur | Ultrasound Clinic in Bijnor</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Adarsh Ultrasound Centre Nehtaur provides pregnancy scan, abdomen scan, pelvic scan and doppler ultrasound in Nehtaur Bijnor.">
+<meta name="keywords" content="Ultrasound Nehtaur, Pregnancy Scan Nehtaur, Ultrasound Bijnor, Adarsh Ultrasound Centre">
 
 <style>
 
 body{
 font-family:Arial;
 margin:0;
-background:#f4f4f4;
+background:#f4f7fb;
+text-align:center;
 }
 
-.header{
-background:#1f5fa8;
+header{
+background:#0b5394;
 color:white;
-text-align:center;
-padding:35px;
+padding:25px;
+}
+
+.banner img{
+width:100%;
 }
 
 .section{
-background:white;
-margin:20px;
-padding:20px;
-border-radius:12px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-text-align:center;
+padding:40px;
 }
 
-img{
-width:100%;
-max-width:600px;
+.gallery img{
+width:300px;
+margin:15px;
 border-radius:10px;
-margin-top:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
-h2{
-color:#1f5fa8;
+.services{
+font-size:18px;
+line-height:35px;
 }
 
-button{
+.doctor{
+background:white;
+padding:30px;
+margin:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.whatsapp{
 background:#25D366;
 color:white;
-border:none;
 padding:15px 25px;
-font-size:18px;
+display:inline-block;
+margin-top:20px;
+font-size:20px;
 border-radius:8px;
+text-decoration:none;
+}
+
+form{
+background:white;
+padding:30px;
+max-width:400px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+input,textarea{
+width:90%;
+padding:10px;
 margin:10px;
 }
 
-.mapbtn{
-background:#2f6db5;
+button{
+padding:12px 20px;
+background:#0b5394;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
 }
 
-.footer{
-background:#1f5fa8;
+.contact{
+background:#0b5394;
 color:white;
-text-align:center;
-padding:15px;
+padding:30px;
 margin-top:30px;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<div class="header">
-
+<header>
 <h1>Adarsh Ultrasound Centre</h1>
-
 <p>Bairamnagar, Nehtaur, Dist Bijnor</p>
+</header>
 
-<p>📞 +91 82730 60581</p>
-
-</div>
-
-
-<div class="section">
-
-<h2>Our Centre</h2>
-
+<div class="banner">
 <img src="IMG_0931.jpeg">
-
 </div>
 
-
-<div class="section">
-
-<h2>Doctor</h2>
-
-<p><b>Dr Avnish Gill</b><br>MBBS, MS</p>
-
+<div class="section gallery">
+<h2>Our Centre</h2>
 <img src="IMG_0933.jpeg">
-
-</div>
-
-
-<div class="section">
-
-<h2>Ultrasound Machine</h2>
-
 <img src="IMG_0934.jpeg">
-
-</div>
-
-
-<div class="section">
-
-<h2>Reception</h2>
-
 <img src="IMG_0935.jpeg">
-
 </div>
 
-
-<div class="section">
-
-<h2>Our Services</h2>
-
+<div class="section services">
+<h2>Ultrasound Services</h2>
 <p>
-
 Pregnancy Scan<br>
 Abdomen Scan<br>
 Pelvic Scan<br>
 Routine Ultrasound<br>
 Doppler Study
-
 </p>
 
-<a href="https://wa.me/918273060581">
-
-<button>Book Appointment on WhatsApp</button>
-
+<a class="whatsapp" href="https://wa.me/918273060581">
+Book on WhatsApp
 </a>
+</div>
 
+<div class="section doctor">
+<h2>Doctors</h2>
+<p>
+Dr. Smriti Gupta (MBBS, MS, DGO)<br>
+Dr. Avnish Gill (MBBS, MS)
+</p>
+</div>
+
+<div class="section">
+<h2>Book Appointment</h2>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="tel" placeholder="Mobile Number" required>
+<textarea placeholder="Message"></textarea>
 <br>
-
-<a href="https://maps.google.com">
-
-<button class="mapbtn">Open Location in Google Maps</button>
-
-</a>
+<button type="submit">Book Appointment</button>
+</form>
 
 </div>
 
+<div class="section">
+<h2>Our Location</h2>
 
-<div class="footer">
+<iframe
+src="https://maps.google.com/maps?q=Nehtaur%20Bijnor&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="90%"
+height="300"
+style="border:0;">
+</iframe>
 
-© Adarsh Ultrasound Centre Nehtaur
+</div>
 
+<div class="contact">
+<h2>Contact</h2>
+<p>
+📍 Bairamnagar, Nehtaur, Dist Bijnor<br><br>
+📞 +91 82730 60581
+</p>
 </div>
 
 </body>
 </html>
+"""
+
+path = "/mnt/data/adarsh_ultrasound_website.html"
+with open(path, "w", encoding="utf-8") as f:
+    f.write(html)
+
+path
