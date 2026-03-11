@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>Adarsh Ultrasound Centre</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
@@ -9,18 +12,17 @@
 body{
 font-family:Arial;
 margin:0;
-background:#f2f2f2;
+background:#f4f4f4;
 }
 
-header{
-background:#2f6fb2;
-color:white;
-padding:40px;
-text-align:center;
+.hero img{
+width:100%;
 }
 
 .container{
 padding:20px;
+max-width:900px;
+margin:auto;
 }
 
 .card{
@@ -28,7 +30,18 @@ background:white;
 padding:20px;
 margin-bottom:20px;
 border-radius:10px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
 }
 
 button{
@@ -51,60 +64,89 @@ color:white;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>Adarsh Ultrasound Centre</h1>
-<p>Bairamnagar, Nehtaur, Dist Bijnor</p>
-</header>
+<div class="hero">
+
+<img src="centre.jpg">
+
+</div>
 
 <div class="container">
 
 <div class="card">
+
 <h2>Doctor</h2>
-<p><b>Dr Avnish Gill</b><br>MBBS, MS</p>
+
+<img src="doctor.jpg">
+
+<p>
+
+<b>Dr Avnish Gill</b><br>
+
+MBBS, MS
+
+</p>
+
 </div>
 
 <div class="card">
+
 <h2>Services</h2>
 
 <ul>
+
 <li>Pregnancy Ultrasound</li>
 <li>Abdomen Scan</li>
 <li>Pelvic Scan</li>
 <li>Routine Ultrasound</li>
+<li>Doppler Study</li>
+
 </ul>
 
 </div>
 
 <div class="card">
-<h2>Clinic Timing</h2>
-<p>Monday – Saturday<br>
-9:00 AM – 6:00 PM</p>
+
+<h2>Clinic Gallery</h2>
+
+<div class="gallery">
+
+<img src="reception.jpg">
+
+<img src="machine.jpg">
+
+</div>
+
 </div>
 
 <div class="card">
-<h2>Contact</h2>
 
-<a href="tel:+918273060581">
-<button class="call">Call Now</button>
-</a>
+<h2>Book Appointment</h2>
 
 <a href="https://wa.me/918273060581">
-<button class="whatsapp">Book on WhatsApp</button>
+
+<button class="whatsapp">
+
+Book Appointment on WhatsApp
+
+</button>
+
 </a>
 
 </div>
 
 <div class="card">
+
 <h2>Location</h2>
 
 <iframe
 src="https://maps.google.com/maps?q=nehtaur%20bijnor&t=&z=13&ie=UTF8&iwloc=&output=embed"
 width="100%"
-height="250"
+height="300"
 style="border:0;">
 </iframe>
 
@@ -113,4 +155,5 @@ style="border:0;">
 </div>
 
 </body>
+
 </html>
